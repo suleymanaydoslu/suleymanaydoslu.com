@@ -1,1 +1,12 @@
-scripts
+<script src="{base_url('assets/js/jquery.min.js')}"></script>
+<script src="{base_url('assets/js/html5.js')}"></script>
+<script src="{base_url('assets/js/jquery.nicescroll.min.js')}"></script>
+<script src="{base_url('assets/js/modernizr.js')}"></script>
+<script src="{base_url('assets/js/jquery.isotope.min.js')}"></script>
+<script src="{base_url('assets/js/tabs.js')}"></script>
+<script src="{base_url('assets/js/jquery.prettyPhoto.js')}"></script>
+<script src="{base_url('assets/js/jquery.bxslider.min.js')}"></script>
+<script src="{base_url('assets/js/twitter/jquery.tweet.js')}"></script>
+<script src="{base_url('assets/js/jflickrfeed.min.js')}"></script>
+<script src="{base_url('assets/js/jquery.jribbble-1.0.1.ugly.js')}"></script>
+<script src="{base_url('assets/js/custom.js')}"></script>
