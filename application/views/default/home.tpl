@@ -332,5 +332,5 @@
 				</div><!-- End sidebar -->
 			</div><!-- End row -->
 		</div><!-- End container -->
-	</div><
+	</div>
 {/block}
