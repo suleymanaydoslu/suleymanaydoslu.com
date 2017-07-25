@@ -6,7 +6,7 @@
   <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Codeigniter 2 Starter </title>
+  <title>suleymanaydoslu.com</title>
   <link href="{base_url('assets/panel/css/bootstrap.min.css')}" rel="stylesheet">
   <link href="{base_url('assets/panel/css/bootstrap-reset.css')}" rel="stylesheet">
   <link href="{base_url('assets/panel/assets/font-awesome/css/font-awesome.css')}" rel="stylesheet" />

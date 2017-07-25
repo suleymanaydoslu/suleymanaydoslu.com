@@ -9,6 +9,8 @@ class Home extends MY_Controller
 
         $where = array('slug' => 'anasayfa');
         $this->data['page_data'] = Model\Pages::make()->where($where)->first();
+
+        $this->data['post'] = \Model\Post::where('id',6)->first();
         $this->load->view('default/home', $this->data);
     }
 

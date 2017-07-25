@@ -17,6 +17,7 @@ class Post extends ORM
             'title' => ORM::field('char[255]'),
             'slug' => ORM::field('char[255]'),
             'description' => ORM::field('char[255]'),
+            'content' => ORM::field('char[255]'),
             'status' => ORM::field('char[255]')
         );
 

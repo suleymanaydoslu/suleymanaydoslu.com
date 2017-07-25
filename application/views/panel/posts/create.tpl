@@ -48,6 +48,13 @@
                                         </div>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Yayın Durumu: </label>
+                                        <div class="col-lg-10">
+                                            <textarea name="content" id="ckeditor" class="ckeditor" rows="10"></textarea>
+                                        </div>
+                                    </div>
+
                                     <input type="submit" class="finish btn btn-danger" value="Kaydet"/>
                                 </form>
                             </div>
@@ -67,4 +74,13 @@
     <script src="{base_url('assets/panel/js/jquery.scrollTo.min.js')}"></script>
     <script src="{base_url('assets/panel/js/jquery.nicescroll.js')}" type="text/javascript"></script>
     <script src="{base_url('assets/panel/js/common-scripts.js')}"></script>
+
+    <script src="{base_url('assets/panel/assets/ckeditor-office/ckeditor.js')}"></script>
+    <script>
+        CKEDITOR.replace('ckeditor',{
+            height: '300px',
+            extraPlugins: 'codesnippet',
+            codeSnippet_theme: 'solarized_dark'
+        });
+    </script>
 {/block}

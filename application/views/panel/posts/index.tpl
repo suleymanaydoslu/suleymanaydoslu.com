@@ -9,7 +9,8 @@
         <section id="main-content">
             <section class="wrapper" style="min-height:545px">
                 <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 alert alert-info text-center"><strong>POSTLARI LİSTELE</strong>
+                    <div class="col-sm-10 col-sm-offset-1 alert alert-info text-center"><strong>POSTLARI
+                            LİSTELE</strong>
                         <small>{if $count<1} (Toplam:0) {else} (Toplam:{$count}) {/if}</small>
                     </div>
                     {if isset($errorMessage)}
@@ -25,6 +26,7 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Başlık</th>
+                                        <th>Durum</th>
                                         <th>Oluşturulma Tarihi</th>
                                         <th>İşlem</th>
                                     </tr>
@@ -34,20 +36,19 @@
                                         <tr>
                                             <td>{$k+1}</td>
                                             <td>{$post->title}</td>
+                                            <td>{if ($post->status == 0)} Pasif {elseif ($post->status == 1)} Taslak {else} Yayında {/if}</td>
                                             <td>{$post->created_at}</td>
-                                            <td width="90">
+                                            <td width="75" class="text-center">
                                                 <a class="btn btn-success btn-xs"
-                                                   href="{base_url('panel/post/show')}/{$post->id}"
-                                                   data-toggle="tooltip" data-placement="bottom" title="Görüntüle"><i
-                                                            class="icon-search"></i></a>
                                                 <a class="btn btn-primary btn-xs"
                                                    href="{base_url('panel/post/edit')}/{$post->id}"
                                                    data-toggle="tooltip" data-placement="bottom" title="Düzenle"><i
                                                             class="icon-pencil"></i></a>
                                                 <a class="btn btn-danger btn-xs"
                                                    href="{base_url('panel/post/delete')}/{$post->id}"
-                                                   data-toggle="tooltip" data-placement="bottom" title="Sil"><i
-                                                            class="icon-trash "></i></a>
+                                                   data-toggle="tooltip" data-placement="bottom" title="Sil"
+                                                   onclick="return confirm('are you sure?')"><i
+                                                            class="icon-trash"></i></a>
                                             </td>
                                         </tr>
                                     {/foreach}
