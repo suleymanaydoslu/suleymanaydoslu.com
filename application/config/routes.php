@@ -2,13 +2,13 @@
 
 /* ADMIN PANEL */
 
-$route['panel'] = 'admin/home';
+$route['panel'] = 'admin/HomeController';
 
-$route['panel/users'] = "admin/users/all";
-$route['panel/user/add'] = "admin/users/add";
-$route['panel/user/delete/(:num)'] = "admin/users/delete/$1";
-$route['panel/user/show/(:num)'] = "admin/users/show/$1";
-$route['panel/user/edit/(:num)'] = "admin/users/edit/$1";
+$route['panel/users'] = "admin/UsersController/all";
+$route['panel/user/add'] = "admin/UsersController/add";
+$route['panel/user/delete/(:num)'] = "admin/UsersController/delete/$1";
+$route['panel/user/show/(:num)'] = "admin/UsersController/show/$1";
+$route['panel/user/edit/(:num)'] = "admin/UsersController/edit/$1";
 
 $route['panel/posts'] = "admin/PostsController/index";
 $route['panel/post/create'] = "admin/PostsController/create";
@@ -17,17 +17,17 @@ $route['panel/post/edit/(:num)'] = "admin/PostsController/edit/$1";
 $route['panel/post/update/(:num)'] = "admin/PostsController/update/$1";
 $route['panel/post/delete/(:num)'] = "admin/PostsController/delete/$1";
 
-$route['panel/pages'] = "admin/pages/all";
-$route['panel/page/add'] = "admin/pages/add";
-$route['panel/page/delete/(:num)'] = "admin/pages/delete/$1";
-$route['panel/page/edit/(:num)'] = "admin/pages/edit/$1";
+$route['panel/pages'] = "admin/PagesController/all";
+$route['panel/page/add'] = "admin/PagesController/add";
+$route['panel/page/delete/(:num)'] = "admin/PagesController/delete/$1";
+$route['panel/page/edit/(:num)'] = "admin/PagesController/edit/$1";
 
-$route['panel/settings'] = "admin/settings/all";
-$route['panel/setting/edit/(:num)'] = "admin/settings/edit/$1";
+$route['panel/settings'] = "admin/SettingsController/all";
+$route['panel/setting/edit/(:num)'] = "admin/SettingsController/edit/$1";
 
-$route['panel/messages'] = "admin/contacts/home";
-$route['panel/message/show/(:num)'] = "admin/contacts/show/$1";
-$route['panel/message/delete/(:num)'] = "admin/contacts/delete/$1";
+$route['panel/messages'] = "admin/ContactsController/home";
+$route['panel/message/show/(:num)'] = "admin/ContactsController/show/$1";
+$route['panel/message/delete/(:num)'] = "admin/ContactsController/delete/$1";
 
 /* ONLY USERS */
 

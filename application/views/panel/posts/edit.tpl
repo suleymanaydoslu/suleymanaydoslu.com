@@ -5,7 +5,7 @@
         <section id="main-content">
             <section class="wrapper" style="min-height:545px">
                 <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 alert alert-info text-center"><strong>POST EKLE</strong></div>
+                    <div class="col-sm-10 col-sm-offset-1 alert alert-info text-center"><strong>POST DÜZENLE</strong></div>
                 </div>
                 {if isset($errorMessage)}
                     <div class="alert alert-danger">{$errorMessage}</div>
@@ -14,7 +14,7 @@
                     <div class="col-sm-12">
                         <section class="panel">
                             <header class="panel-heading">
-                                Post Ekle
+                                Post Düzenle
                             </header>
                             <div class="panel-body">
                                 <form class="form-horizontal" id="default" action="{base_url('panel/post/update')}/{$post->id}"
