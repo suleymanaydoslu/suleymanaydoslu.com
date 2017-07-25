@@ -10,6 +10,13 @@ $route['panel/user/delete/(:num)'] = "admin/users/delete/$1";
 $route['panel/user/show/(:num)'] = "admin/users/show/$1";
 $route['panel/user/edit/(:num)'] = "admin/users/edit/$1";
 
+$route['panel/posts'] = "admin/PostsController/index";
+$route['panel/post/create'] = "admin/PostsController/create";
+$route['panel/post/store'] = "admin/PostsController/store";
+$route['panel/post/delete/(:num)'] = "admin/PostsController/delete/$1";
+$route['panel/post/show/(:num)'] = "admin/PostsController/show/$1";
+$route['panel/post/edit/(:num)'] = "admin/PostsController/edit/$1";
+
 $route['panel/pages'] = "admin/pages/all";
 $route['panel/page/add'] = "admin/pages/add";
 $route['panel/page/delete/(:num)'] = "admin/pages/delete/$1";

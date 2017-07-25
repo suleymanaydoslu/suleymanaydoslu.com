@@ -2,7 +2,7 @@
     <div class="sidebar-toggle-box">
         <div data-original-title="Menü Daralt" data-placement="right" class="icon-reorder tooltips"></div>
     </div>
-    <a href="#" class="logo">CODEIGNITER 2 STARTER PROJECT</a>
+    <a href="#" class="logo">suleymanaydoslu.com</a>
     <div class="top-nav ">
         <ul class="nav pull-right top-menu">
             <li class="dropdown">
