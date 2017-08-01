@@ -28,6 +28,16 @@
                 </ul>
             </li>
             <li class="sub-menu">
+                <a {if ($yol=='categories' || $yol=='category')} class="active" {/if} href="javascrpt:;">
+                    <i class="icon-user"></i>
+                    <span>Kategoriler</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="{base_url('panel/categories')}">Kategorileri Listele</a></li>
+                    <li><a href="{base_url('panel/category/create')}">Kategori Ekle</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
                 <a {if ($yol=='messages' || $yol=='message')} class="active" {/if} href="javascrpt:;">
                     <i class="icon-envelope"></i>
                     <span>Mesajlar</span>

@@ -17,6 +17,13 @@ $route['panel/post/edit/(:num)'] = "admin/PostsController/edit/$1";
 $route['panel/post/update/(:num)'] = "admin/PostsController/update/$1";
 $route['panel/post/delete/(:num)'] = "admin/PostsController/delete/$1";
 
+$route['panel/categories'] = "admin/CategoryController/index";
+$route['panel/category/create'] = "admin/CategoryController/create";
+$route['panel/category/store'] = "admin/CategoryController/store";
+$route['panel/category/edit/(:num)'] = "admin/CategoryController/edit/$1";
+$route['panel/category/update/(:num)'] = "admin/CategoryController/update/$1";
+$route['panel/category/delete/(:num)'] = "admin/CategoryController/delete/$1";
+
 $route['panel/pages'] = "admin/PagesController/all";
 $route['panel/page/add'] = "admin/PagesController/add";
 $route['panel/page/delete/(:num)'] = "admin/PagesController/delete/$1";
