@@ -49,7 +49,19 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-lg-2 control-label">Yayın Durumu: </label>
+                                        <label class="col-lg-2 control-label">Kategoriler: </label>
+                                        <div class="col-lg-10">
+                                            {if $categories}
+                                                {foreach $categories as $category}
+                                                    <input type="checkbox" name="category[]" value="{$category->id}"> {$category->title}
+                                                    <br>
+                                                {/foreach}
+                                            {/if}
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Post: </label>
                                         <div class="col-lg-10">
                                             <textarea name="content" id="ckeditor" class="ckeditor" rows="10"></textarea>
                                         </div>

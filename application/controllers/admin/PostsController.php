@@ -1,6 +1,8 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 use Model\Post;
+use Model\Category;
+use Model\PostCategories;
 
 class PostsController extends Admin_Controller
 {
@@ -17,6 +19,7 @@ class PostsController extends Admin_Controller
     /* Create Page */
     public function create()
     {
+        $this->data['categories'] = Category::all();
         $this->load->view('panel/posts/create', $this->data);
     }
 
@@ -51,6 +54,19 @@ class PostsController extends Admin_Controller
                 $post = Post::make($array);
 
                 if ($post->save(TRUE)) {
+
+                    $categories = $this->input->post('category');
+                    $postId = Model\Post::last_created()->id;
+                    foreach ($categories as $category){
+
+                        $arr = [
+                            'category_id' => $category,
+                            'post_id' => $postId
+                        ];
+
+                        $postCategory = PostCategories::make($arr);
+                        $postCategory->save(TRUE);
+                    }
 
                     redirect(base_url('panel/posts'));
                 } else {
